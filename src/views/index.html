@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <script>
+      const activUsername = localStorage.getItem('username')
+      if(!activUsername) window.location = '/login'
+  </script>
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body >
+    <scroll-container>
+      <div  id="body"
+      style="height:625px;width: 100%;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"
+      >
+  
+      </div>
+      
+    </scroll-container>
+
+    <form id="form" action="">
+      <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+
+
+<script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+<script src="./js/index.js"></script>
+  </body>
+</html>
